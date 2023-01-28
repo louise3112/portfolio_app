@@ -1,3 +1,7 @@
+import { InlineIcon } from "@iconify/react"
+import githubIcon from '@iconify/icons-logos/github-icon'
+import linkedinIcon from '@iconify/icons-logos/linkedin-icon'
+
 import styled from "styled-components"
 
 const AboutMeSection = styled.div`
@@ -24,6 +28,20 @@ const AboutMeSubHeading = styled.h2`
     grid-area: subheading;
 `
 
+const AboutMeGithub = styled.a`
+    grid-area: github;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const AboutMeLinkedin = styled.a`
+    grid-area: linkedin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const AboutMeText = styled.p`
     font-size: 1.25em;
     grid-area: text;
@@ -39,7 +57,8 @@ const AboutMe = () => {
         <AboutMeSection>
             <AboutMeHeading>Louise Cuthbertson </AboutMeHeading>
             <AboutMeSubHeading>Software Developer in Edinburgh</AboutMeSubHeading>
-            {/* Add in icons / links for linked in and github! */}
+            <AboutMeGithub href="https://github.com/louise3112"><InlineIcon icon={githubIcon} height={60} width={60}/></AboutMeGithub>
+            <AboutMeLinkedin href="www.linkedin.com/in/lcuthbertson3112"><InlineIcon icon={linkedinIcon} height={60} width={60}/></AboutMeLinkedin>
 
             <AboutMeText> Having spent almost ten years as a statistician, I decided it was time for a new challenge that allowed me to focus more on my existing passion for coding and solving logic-based problems. At the end of 2022, I started an intensive 16 week Professional Software Development course at <AboutMeLink href="https://codeclan.com/">CodeClan</AboutMeLink> so I could develop the skills needed to refocus my career into the Tech Industry.</AboutMeText>
         </AboutMeSection>
