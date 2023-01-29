@@ -73,7 +73,7 @@ const GitHubLinks = styled.a`
     width: 100%;
     text-align: center;
     background-color: #7d0068;
-    color: #feeef7;
+    color: #fff8fc;
     margin: 0;
     padding: 0.5em 0em 0.5em 0em;
 `
