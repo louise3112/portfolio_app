@@ -9,7 +9,7 @@ const FooterSection = styled.div`
 
 const FooterText = styled.p`
     font-size: 1.25em;
-    color: #feeef7;
+    color: #fff8fc;
     text-align: center;
     margin: 0;
 `

@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 const AboutMeSection = styled.div`
     background-color: #7d0068;
-    color: #feeef7;
+    color: #fff8fc;
     padding: 2em 4em 2em 4em;
     display: grid;
     grid-template-columns: 80% 10% 10%;
@@ -18,14 +18,12 @@ const AboutMeSection = styled.div`
 
 const AboutMeHeading = styled.h1`
     font-size: 2em;
-    color: #feeef7;
     margin: 0.5em 0em 0em 0em;
     grid-area: heading;
 `
 
 const AboutMeSubHeading = styled.h2`
     font-size: 1.5em;
-    color: #feeef7;
     margin: 0.5em 0em 0em 0em;
     grid-area: subheading;
 `
@@ -50,7 +48,7 @@ const AboutMeText = styled.p`
 `
 
 const AboutMeLink = styled.a`
-    color: #FFFFFF;
+    color: #fff8fc;
     cursor: pointer;
 `
 
