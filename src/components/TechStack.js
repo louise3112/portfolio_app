@@ -2,7 +2,7 @@
 //      npm install @iconify/react
 //      npm install @iconify/icons-logos
 
-import { InlineIcon } from "@iconify/react"
+import { Icon } from "@iconify/react"
 
 import javascriptIcon from "@iconify/icons-logos/javascript"
 import nodejsIcon from '@iconify/icons-logos/nodejs'
@@ -16,6 +16,8 @@ import pythonIcon from '@iconify/icons-logos/python'
 import flaskIcon from '@iconify/icons-logos/flask'
 import postgresqlIcon from '@iconify/icons-logos/postgresql'
 
+// import javaIcon from '@iconify/icons-logos/java'
+
 import html5 from '@iconify/icons-logos/html-5'
 import css3 from '@iconify/icons-logos/css-3'
 import gitIcon from '@iconify/icons-logos/git'
@@ -25,39 +27,35 @@ import tableauIcon from '@iconify/icons-logos/tableau'
 import vbaIcon from '../images/vbaIcon.svg'
 import sasIcon from '../images/sasIcon.svg'
 
-// import javaIcon from '@iconify/icons-logos/java'
-
 
 import styled from "styled-components"
 const TechStackSection = styled.div`
-    padding: 2em 4em 1em 4em;
-    color: #370D32;
+    padding: 1em 4em 1em 4em;
     font-weight: bold;
 `
 
 const TechStackHeading = styled.h2`
-    color: #370D32;
+    color: #7d0068;
     font-size: 1.5em;
     margin: 0em 0em 1em 0em;
 `
 
 const TechStackList = styled.ul`
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 5%;
+    column-gap: 3em;
+    row-gap: 1em;
 `
 
 const TechStackItem = styled.li`
     display: flex;
     flex-direction: column;
-    align-items:center;
-`
-
-const TechStackName = styled.p`
-    font-size: 1.2em;
-    margin: 0.5em 0em 1em 0em;
+    align-items: center;
+    justify-content: center;
 `
 
 
@@ -66,89 +64,72 @@ const TechStack = () => {
         <TechStackSection>
             <TechStackHeading>Tech Stack</TechStackHeading>
             <TechStackList>
-                <TechStackItem>
-                    <InlineIcon icon={javascriptIcon} height={80} width={80}/>
-                    <TechStackName>JavaScript</TechStackName>
+                <TechStackItem title="JavaScript">
+                    <Icon icon={javascriptIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={nodejsIcon} height={80} width={80}/>
-                    <TechStackName>Node JS</TechStackName>
+                <TechStackItem title="Node JS">
+                    <Icon icon={nodejsIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={mochaIcon} height={80} width={80}/>
-                    <TechStackName>Mocha</TechStackName>
+                <TechStackItem title="Mocha">
+                    <Icon icon={mochaIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={jestIcon} height={80} width={80}/>
-                    <TechStackName>Jest</TechStackName>
+                <TechStackItem title="Jest">
+                    <Icon icon={jestIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={cypressIcon} height={80} width={80}/>
-                    <TechStackName>Cypress</TechStackName>
+                <TechStackItem title="Cypress">
+                    <Icon icon={cypressIcon} height="5em" width="5em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={reactIcon} height={80} width={80}/>
-                    <TechStackName>React</TechStackName>
+                <TechStackItem title="React">
+                    <Icon icon={reactIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={pythonIcon} height={80} width={80}/>
-                    <TechStackName>Python</TechStackName>
+                <TechStackItem title="Python">
+                    <Icon icon={pythonIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={flaskIcon} height={80} width={80}/>
-                    <TechStackName>Flask</TechStackName>
+                <TechStackItem title="Flask">
+                    <Icon icon={flaskIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={postgresqlIcon} height={80} width={80}/>
-                    <TechStackName>PostgreSQL</TechStackName>
+                <TechStackItem title="PostgreSQL">
+                    <Icon icon={postgresqlIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={html5} height={80} width={80}/>
-                    <TechStackName>HTML</TechStackName>
+                <TechStackItem title="HTML">
+                    <Icon icon={html5} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={css3} height={80} width={80}/>
-                    <TechStackName>CSS</TechStackName>
+                <TechStackItem title="CSS">
+                    <Icon icon={css3} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={gitIcon} height={80} width={80}/>
-                    <TechStackName>Git</TechStackName>
+                <TechStackItem title="Git">
+                    <Icon icon={gitIcon} height="5em" width="5em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={vsCodeIcon} height={80} width={80}/>
-                    <TechStackName>VS Code</TechStackName>
+                <TechStackItem title="VSCode">
+                    <Icon icon={vsCodeIcon} height="3em" width="3em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={microsoftIcon} height={80} width={80}/>
-                    <TechStackName>Microsoft</TechStackName>
+                <TechStackItem title="Microsoft">
+                    <Icon icon={microsoftIcon} height="6em" width="6em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <InlineIcon icon={tableauIcon} height={80} width={80}/>
-                    <TechStackName>Tableau</TechStackName>
+                <TechStackItem title="Tableau">
+                    <Icon icon={tableauIcon} height="6em" width="6em"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <img icon={vbaIcon} height={80} width={80}/>
-                    <TechStackName>VBA</TechStackName>
+                <TechStackItem title="Microsoft VBA">
+                    <img src={vbaIcon} height="60em" width="60em" alt="VBA"/>
                 </TechStackItem>
 
-                <TechStackItem>
-                    <img icon={sasIcon} height={80} width={80}/>
-                    <TechStackName>SAS</TechStackName>
+                <TechStackItem title="SAS Analytics Software">
+                    <img src={sasIcon} height="50em" width="50em" alt="SAS"/>
                 </TechStackItem>
 
             </TechStackList>
