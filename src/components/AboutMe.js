@@ -57,7 +57,7 @@ const AboutMe = () => {
         <AboutMeSection>
             <AboutMeHeading>Louise Cuthbertson </AboutMeHeading>
             <AboutMeSubHeading>Software Developer in Edinburgh</AboutMeSubHeading>
-            <AboutMeLinkedin href="www.linkedin.com/in/lcuthbertson3112" target="_blank"><InlineIcon icon={linkedinIcon} height="4em" width="4em"/></AboutMeLinkedin>
+            <AboutMeLinkedin href="https://www.linkedin.com/in/lcuthbertson3112" target="_blank"><InlineIcon icon={linkedinIcon} height="4em" width="4em"/></AboutMeLinkedin>
             <AboutMeGithub href="https://github.com/louise3112" target="_blank"><InlineIcon icon={githubIcon} height="4em" width="4em"/></AboutMeGithub>
 
             <AboutMeText> Having spent almost ten years as a statistician, I decided it was time for a new challenge that allowed me to focus more on my existing passion for coding and solving logic-based problems. At the end of 2022, I started an intensive 16 week Professional Software Development course at <AboutMeLink href="https://codeclan.com/" target="_blank">CodeClan</AboutMeLink> so I could develop the skills needed to refocus my career into the Tech Industry. </AboutMeText>

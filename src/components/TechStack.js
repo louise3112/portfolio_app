@@ -10,7 +10,7 @@ import mochaIcon from '@iconify/icons-logos/mocha'
 import jestIcon from '@iconify/icons-logos/jest'
 import cypressIcon from '@iconify/icons-logos/cypress'
 import reactIcon from '@iconify/icons-logos/react'
-// import mongodbIcon from '@iconify/icons-logos/mongodb'
+import mongodbIcon from '@iconify/icons-logos/mongodb'
 
 import pythonIcon from '@iconify/icons-logos/python'
 import flaskIcon from '@iconify/icons-logos/flask'
@@ -62,7 +62,7 @@ const TechStackItem = styled.li`
 const TechStack = () => {
     return (
         <TechStackSection>
-            <TechStackHeading>Tech Stack</TechStackHeading>
+            <TechStackHeading>TECH STACK</TechStackHeading>
             <TechStackList>
                 <TechStackItem title="JavaScript">
                     <Icon icon={javascriptIcon} height="4em" width="4em"/>
@@ -98,6 +98,10 @@ const TechStack = () => {
 
                 <TechStackItem title="PostgreSQL">
                     <Icon icon={postgresqlIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                <TechStackItem title="MongoDB">
+                    <Icon icon={mongodbIcon} height="5em" width="5em"/>
                 </TechStackItem>
 
                 <TechStackItem title="HTML">

@@ -1,5 +1,6 @@
 import cardGames from '../images/cardGames.png'
 import droidWorkshop from '../images/droidWorkshop.png'
+import countriesQuiz from '../images/countriesQuiz.png'
 
 import styled from "styled-components"
 
@@ -82,15 +83,15 @@ const GitHubLinks = styled.a`
 const Projects = () => {
     return (
         <ProjectsSection>
-            <ProjectsHeading>Projects</ProjectsHeading>
+            <ProjectsHeading>PROJECTS</ProjectsHeading>
             <ProjectsList>
 
                 <ProjectBox>
                     {/* <ProjectsLinks href="" target="_blank"> */}
                         <ProjectHeading>Droid Repair Workshop</ProjectHeading>
-                        <ProjectInfo>1 week solo project using <b>Python / Flask, PostgreSQL & CSS</b></ProjectInfo>
+                        <ProjectInfo><b>1 week solo project using Python / Flask, PostgreSQL & CSS</b></ProjectInfo>
                         <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/>
-                        <ProjectInfo><b>Brief: </b> Build an app to manage CRUD actions for technicians, droids & droid owners at a droid repair workshop.</ProjectInfo>
+                        <ProjectInfo>For my first project at CodeClan, I developed a full stack Python app. The initial brief was to ensure the app could manage CRUD actions for technicians, droids and droid owners at a droid repair workshop. Within the timeframe, I was able to further extend this to incorporate CRUD actions for services available at the workshop as well.</ProjectInfo>
                     {/* </ ProjectsLinks> */}
                     <GitHubLinks href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</GitHubLinks>
                 </ProjectBox>
@@ -98,11 +99,21 @@ const Projects = () => {
                 <ProjectBox>
                     <ProjectsLinks href="https://louise3112.github.io/card_games/" target="_blank">
                         <ProjectHeading>Card Games</ProjectHeading>
-                        <ProjectInfo>1 day solo project in <b>JavaScript / React & CSS </b></ProjectInfo>
+                        <ProjectInfo><b>1 day solo project in JavaScript / React & CSS </b></ProjectInfo>
                         <ProjectImage src={cardGames} alt="Screenshot of Card Games app"/>
-                        <ProjectInfo><b>Brief: </b> Build a card game app utilising the Deck of Cards API.</ProjectInfo>
+                        <ProjectInfo>A self-determined project to build a fun React app utilizing the Deck of Cards API. </ProjectInfo>
                     </ ProjectsLinks>
                     <GitHubLinks href="https://github.com/louise3112/card_games" target="_blank">See full code on GitHub</GitHubLinks>
+                </ProjectBox>
+
+                <ProjectBox>
+                    {/* <ProjectsLinks href="" target="_blank"> */}
+                        <ProjectHeading>geograPHUN</ProjectHeading>
+                        <ProjectInfo><b>1 week group project in JavaScript / React, MongoDB & CSS </b></ProjectInfo>
+                        <ProjectImage src={countriesQuiz} alt="Screenshot of geograPHUN app"/>
+                        <ProjectInfo>For my JavaScript group project at CodeClan, we designed an app using the Countries API data where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectInfo>
+                    {/* </ ProjectsLinks> */}
+                    <GitHubLinks href="https://github.com/louise3112/countries_quiz" target="_blank">See full code on GitHub</GitHubLinks>
                 </ProjectBox>
 
 
