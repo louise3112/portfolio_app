@@ -5,7 +5,7 @@ import countriesQuiz from '../images/countriesQuiz.png'
 import styled from "styled-components"
 
 const ProjectsSection = styled.div`
-    padding: 1.75em 4em 1em 4em;
+    padding: 1em 4em 1em 4em;
 `
 
 const ProjectsHeading = styled.h2`
@@ -18,6 +18,7 @@ const ProjectsHeading = styled.h2`
 const ProjectsList = styled.ul`
     list-style: none;
     padding: 0;
+    margin: 1em 0em 1em 0em;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

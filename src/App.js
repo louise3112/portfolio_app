@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
+import Header from './components/Header'
 import AboutMe from './components/AboutMe'
-import TechStack from './components/TechStack'
 import Projects from './components/Projects'
+import TechStack from './components/TechStack'
 import Footer from './components/Footer'
 
 const AppContent = styled.div`
@@ -21,7 +22,9 @@ const LineBreak = styled.hr`
 function App() {
     return (
         <AppContent>
+            <Header />
             <AboutMe />
+            <LineBreak align="center"/>
             <Projects/>
             <LineBreak align="center"/>
             <TechStack />

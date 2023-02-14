@@ -1,66 +1,33 @@
-import { InlineIcon } from "@iconify/react"
-import linkedinIcon from '@iconify/icons-logos/linkedin-icon'
-import githubIcon from '@iconify/icons-logos/github-icon'
-
 import styled from "styled-components"
 
 const AboutMeSection = styled.div`
-    background-color: #7d0068;
-    color: #fff8fc;
-    padding: 2em 4em 2em 4em;
-    display: grid;
-    grid-template-columns: 80% 10% 10%;
-    grid-template-areas:
-        "heading linkedin github"
-        "subheading linkedin github"
-        "text text text";
+    padding: 1.75em 4em 2em 4em;
 `
 
-const AboutMeHeading = styled.h1`
-    font-size: 2em;
-    margin: 0.5em 0em 0em 0em;
-    grid-area: heading;
-`
-
-const AboutMeSubHeading = styled.h2`
+const AboutMeHeading = styled.h2`
+    color: #7d0068;
     font-size: 1.5em;
-    margin: 0.5em 0em 0em 0em;
-    grid-area: subheading;
-`
-
-const AboutMeLinkedin = styled.a`
-    grid-area: linkedin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-const AboutMeGithub = styled.a`
-    grid-area: github;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: bold;
+    margin: 0em 0em 1em 0em;
 `
 
 const AboutMeText = styled.p`
     font-size: 1.25em;
-    grid-area: text;
+    margin: 1.5em 0em 0em 0em;
 `
 
 const AboutMeLink = styled.a`
-    color: #fff8fc;
+    color: black;
     cursor: pointer;
 `
 
 const AboutMe = () => {
     return (
         <AboutMeSection>
-            <AboutMeHeading>Louise Cuthbertson </AboutMeHeading>
-            <AboutMeSubHeading>Software Developer in Edinburgh</AboutMeSubHeading>
-            <AboutMeLinkedin href="https://www.linkedin.com/in/lcuthbertson3112" target="_blank"><InlineIcon icon={linkedinIcon} height="4em" width="4em"/></AboutMeLinkedin>
-            <AboutMeGithub href="https://github.com/louise3112" target="_blank"><InlineIcon icon={githubIcon} height="4em" width="4em"/></AboutMeGithub>
+            <AboutMeHeading>ABOUT ME</AboutMeHeading>
+            <AboutMeText>Having spent over 9 years' as a statistician in the public sector, I wanted a new challenge. Reflecting on my varied analytical roles, I had always gained most satisfaction from projects that allowed me significant opportunities to code, including implementing new code to automate processes; updating legacy code to reflect changes in requirements; training colleagues in using analytical coding softwares, including SAS and VBA.</AboutMeText>
 
-            <AboutMeText> Having spent almost ten years as a statistician, I decided it was time for a new challenge that allowed me to focus more on my existing passion for coding and solving logic-based problems. At the end of 2022, I started an intensive 16 week Professional Software Development course at <AboutMeLink href="https://codeclan.com/" target="_blank">CodeClan</AboutMeLink> so I could develop the skills needed to refocus my career into the Tech Industry. </AboutMeText>
+            <AboutMeText>This love of coding, combined with a natural passion for solving problems (I'm an escape room fanatic with a 100% escape record!) led me to look into changing careers to software development and at the end of 2022, I started an intensive 16 week Professional Software Development course at <AboutMeLink href="https://codeclan.com/" target="_blank">CodeClan</AboutMeLink>. This portfolio reflects the projects I have completed since starting my software development journey.</AboutMeText>
         </AboutMeSection>
     )
 }
