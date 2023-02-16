@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_app/static/css/main.995d2a59.css",
-    "main.js": "/portfolio_app/static/js/main.d125b663.js",
+    "main.js": "/portfolio_app/static/js/main.f9eea85c.js",
     "static/js/787.30237536.chunk.js": "/portfolio_app/static/js/787.30237536.chunk.js",
     "static/media/countriesQuiz.png": "/portfolio_app/static/media/countriesQuiz.c189ced5bea36532e6ad.png",
     "static/media/cardGames.png": "/portfolio_app/static/media/cardGames.3737c2b92754c1500f26.png",
@@ -10,11 +10,11 @@
     "index.html": "/portfolio_app/index.html",
     "static/media/sasIcon.svg": "/portfolio_app/static/media/sasIcon.30aa482f84f842c949fc375435b0905d.svg",
     "main.995d2a59.css.map": "/portfolio_app/static/css/main.995d2a59.css.map",
-    "main.d125b663.js.map": "/portfolio_app/static/js/main.d125b663.js.map",
+    "main.f9eea85c.js.map": "/portfolio_app/static/js/main.f9eea85c.js.map",
     "787.30237536.chunk.js.map": "/portfolio_app/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.995d2a59.css",
-    "static/js/main.d125b663.js"
+    "static/js/main.f9eea85c.js"
   ]
 }
