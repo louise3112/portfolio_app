@@ -12,7 +12,7 @@ const AboutMeHeading = styled.h2`
 `
 
 const AboutMeText = styled.p`
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 1.5em 0em 0em 0em;
 `
 

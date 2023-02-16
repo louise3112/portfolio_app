@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 const FooterSection = styled.div`
     background-color: #7d0068;
-    padding: 1em 0em 1em 0em;
+    padding: 0.8em 0em 0.8em 0em;
     display: grid;
     margin-top: auto;
 `
 
 const FooterText = styled.p`
-    font-size: 1.25em;
+    font-size: 1em;
     color: #fff8fc;
     text-align: center;
     margin: 0;

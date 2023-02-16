@@ -12,7 +12,7 @@ const AppContent = styled.div`
 `
 
 const LineBreak = styled.hr`
-    border-top: 1px solid #7d0068;
+    border-top: 2px solid #7d0068;
     border-left: none;
     margin-top: 0;
     margin-bottom: 0;
