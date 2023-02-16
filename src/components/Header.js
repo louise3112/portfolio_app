@@ -7,7 +7,7 @@ import styled from "styled-components"
 const HeaderSection = styled.div`
     background-color: #7d0068;
     color: #fff8fc;
-    padding: 0.5em 4em 0.5em 4em;
+    padding: 1.75em 4em 1em 4em;
     display: grid;
     grid-template-columns: 80% 10% 10%;
     grid-template-areas:
@@ -15,21 +15,24 @@ const HeaderSection = styled.div`
         "subheading linkedin github"
         "text text text";
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
+        padding: 1.25em 1.5em 1em 1.5em;
         grid-template-columns: 76% 4% 8% 4% 8%;
         grid-template-areas:
             "heading . linkedin . github"
-            "subheading . linkedin . github"
+            "subheading subheading subheading subheading subheading"
             "text text text text text";
     }
 `
 
 const Heading = styled.h1`
-    font-size: 2em;
-    margin: 0.5em 0em 0em 0em;
     grid-area: heading;
+    font-size: 2em;
+    margin: 0;
+    display: flex;
+    align-items: center;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         font-size: 1.6em;
     }
 `
@@ -39,7 +42,7 @@ const SubHeading = styled.h2`
     margin: 0.5em 0em 0em 0em;
     grid-area: subheading;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         font-size: 1.25em;
     }
 `
@@ -62,7 +65,7 @@ const HeaderText = styled.p`
     font-size: 1.25em;
     grid-area: text;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         font-size: 1.1em;
     }
 `

@@ -32,6 +32,10 @@ import styled from "styled-components"
 const TechStackSection = styled.div`
     padding: 1em 4em 1em 4em;
     font-weight: bold;
+
+    @media only screen and (max-width: 1000px) {
+        padding: 1em 1.5em 1em 1.5em;
+    }
 `
 
 const TechStackHeading = styled.h2`

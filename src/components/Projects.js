@@ -6,6 +6,10 @@ import styled from "styled-components"
 
 const ProjectsSection = styled.div`
     padding: 1em 4em 1em 4em;
+
+    @media only screen and (max-width: 1000px) {
+        padding: 1em 1.5em 1em 1.5em;
+    }
 `
 
 const ProjectsHeading = styled.h2`
@@ -30,7 +34,7 @@ const ProjectBox = styled.li`
     grid-template-columns: 65% 3% 30% 2%;
     align-items: center;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,7 +52,7 @@ const ProjectInfo = styled.div`
 const ProjectLink = styled.a`
     grid-area: image;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         height: auto;
         width: 80%;
     }
@@ -57,7 +61,7 @@ const ProjectLink = styled.a`
 const NoLink = styled.div`
     grid-area: image;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         height: auto;
         width: 80%;
     }
@@ -104,7 +108,7 @@ const LineBreak = styled.hr`
     margin-bottom: 0;
     width: 80%;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         width: 85%;
     }
 `

@@ -1,7 +1,11 @@
 import styled from "styled-components"
 
 const AboutMeSection = styled.div`
-    padding: 1.75em 4em 2em 4em;
+    padding: 1.5em 4em 2em 4em;
+
+    @media only screen and (max-width: 1000px) {
+        padding: 1em 1.5em 1.5em 1.5em;
+    }
 `
 
 const AboutMeHeading = styled.h2`
