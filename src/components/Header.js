@@ -14,18 +14,34 @@ const HeaderSection = styled.div`
         "heading linkedin github"
         "subheading linkedin github"
         "text text text";
+
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: 76% 4% 8% 4% 8%;
+        grid-template-areas:
+            "heading . linkedin . github"
+            "subheading . linkedin . github"
+            "text text text text text";
+    }
 `
 
 const Heading = styled.h1`
     font-size: 2em;
     margin: 0.5em 0em 0em 0em;
     grid-area: heading;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 1.6em;
+    }
 `
 
 const SubHeading = styled.h2`
     font-size: 1.5em;
     margin: 0.5em 0em 0em 0em;
     grid-area: subheading;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 1.25em;
+    }
 `
 
 const HeaderLinkedin = styled.a`
@@ -45,6 +61,10 @@ const HeaderGithub = styled.a`
 const HeaderText = styled.p`
     font-size: 1.25em;
     grid-area: text;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 1.1em;
+    }
 `
 
 const Header = () => {

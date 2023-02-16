@@ -18,14 +18,9 @@ const ProjectsHeading = styled.h2`
 const ProjectsList = styled.ul`
     list-style: none;
     padding: 0;
-    margin: 1em 0em 1em 0em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    column-gap: 3em;
-    row-gap: 1em;
+    row-gap: 2em;
     color: black;
 `
 
@@ -34,6 +29,13 @@ const ProjectBox = styled.li`
     grid-template-areas: 'info . image .';
     grid-template-columns: 65% 3% 30% 2%;
     align-items: center;
+
+    @media only screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+    }
 `
 
 const ProjectInfo = styled.div`
@@ -45,6 +47,20 @@ const ProjectInfo = styled.div`
 
 const ProjectLink = styled.a`
     grid-area: image;
+
+    @media only screen and (max-width: 900px) {
+        height: auto;
+        width: 80%;
+    }
+`
+
+const NoLink = styled.div`
+    grid-area: image;
+
+    @media only screen and (max-width: 900px) {
+        height: auto;
+        width: 80%;
+    }
 `
 
 const ProjectHeading = styled.h4`
@@ -75,7 +91,6 @@ const GitHubLinks = styled.a`
 `
 
 const ProjectImage = styled.img`
-    grid-area: image;
     height: auto;
     max-width: 100%;
     border: 0.5px solid grey;
@@ -88,6 +103,10 @@ const LineBreak = styled.hr`
     margin-top: 0;
     margin-bottom: 0;
     width: 80%;
+
+    @media only screen and (max-width: 900px) {
+        width: 85%;
+    }
 `
 
 
@@ -97,13 +116,13 @@ const Projects = () => {
             <ProjectsHeading>PROJECTS</ProjectsHeading>
             <ProjectsList>
 
-            <ProjectBox>
+                <ProjectBox>
                     <ProjectInfo>
                         <ProjectHeading>geograPHUN</ProjectHeading>
                         <ProjectText><b>1 week group project in JavaScript / React, MongoDB & CSS </b></ProjectText>
                         <ProjectText>For my JavaScript group project at CodeClan, we designed an app using the <TextLinks href="https://restcountries.com/#api-endpoints-v3-all" target="_blank">Countries API data</TextLinks> where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectText>
 
-                        <ProjectText>A video capturing the functionality of this app can be found on linkedin by clicking the image to the right.</ProjectText>
+                        <ProjectText>A video capturing the functionality of this app can be found on linkedin by clicking on the image.</ProjectText>
                         <GitHubLinks href="https://github.com/louise3112/countries_quiz" target="_blank">See full code on GitHub</GitHubLinks>
                     </ProjectInfo>
                     <ProjectLink href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">
@@ -121,7 +140,7 @@ const Projects = () => {
 
                         <ProjectText>The current version of the app contains a single card game based on the "52 card pick-up" idea. The app has been designed in a way to ensure it is fairly adaptable to being expanded for further card games at a later date.</ProjectText>
 
-                        <ProjectText>A live copy of this app can be accessed by clicking on the image to the right. </ProjectText>
+                        <ProjectText>A live copy of this app can be accessed by clicking on the image. </ProjectText>
 
                         <GitHubLinks href="https://github.com/louise3112/card_games" target="_blank">See full code on GitHub</GitHubLinks>
                     </ProjectInfo>
@@ -141,7 +160,9 @@ const Projects = () => {
                         <ProjectText>Within the timeframe, I was able to further extend this to incorporate CRUD actions for services available at the workshop as well.</ProjectText>
                         <GitHubLinks href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</GitHubLinks>
                     </ProjectInfo>
-                    <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/>
+                    <NoLink>
+                        <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/>
+                    </NoLink>
                 </ProjectBox>
 
 
