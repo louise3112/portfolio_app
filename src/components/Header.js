@@ -1,6 +1,5 @@
-import { InlineIcon } from "@iconify/react"
-import linkedinIcon from '@iconify/icons-logos/linkedin-icon'
-import githubIcon from '@iconify/icons-logos/github-icon'
+import linkedinIcon from "../images/linkedinIcon.png"
+import githubIcon from "../images/githubIcon.png"
 
 import styled from "styled-components"
 
@@ -75,8 +74,12 @@ const Header = () => {
         <HeaderSection>
             <Heading>Louise Cuthbertson </Heading>
             <SubHeading>Software Developer in Edinburgh</SubHeading>
-            <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><InlineIcon icon={linkedinIcon} height="4em" width="4em"/></HeaderLinkedin>
-            <HeaderGithub href="https://github.com/louise3112" target="_blank"><InlineIcon icon={githubIcon} height="4em" width="4em"/></HeaderGithub>
+            {/* <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><InlineIcon icon={linkedinIcon} height="4em" width="4em"/></HeaderLinkedin>
+            <HeaderGithub href="https://github.com/louise3112" target="_blank"><InlineIcon icon={githubIcon} height="4em" width="4em"/></HeaderGithub> */}
+
+            <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><img src={linkedinIcon} height="70em" width="70em"/></HeaderLinkedin>
+            <HeaderGithub href="https://github.com/louise3112" target="_blank"><img src={githubIcon} height="90em" width="90em"/></HeaderGithub>
+            
 
             <HeaderText> Strong analytical background with an exceptional eye for detail. I am currently looking for a new challenge that will allow me to combine my love of coding and debugging with my passion for solving logic-based problems. </HeaderText>
 

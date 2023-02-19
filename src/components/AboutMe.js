@@ -16,8 +16,12 @@ const AboutMeHeading = styled.h2`
 `
 
 const AboutMeText = styled.p`
-    font-size: 1em;
+    font-size: 1.15em;
     margin: 1.5em 0em 0em 0em;
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 1em;
+    }
 `
 
 const AboutMeLink = styled.a`
