@@ -72,18 +72,23 @@ const TextLinks = styled.a`
 
 const ProjectLinksDiv = styled.div`
     display: flex;
+    justify-content: space-evenly;
     column-gap: 2em;
 `
 
 const ProjectLink = styled.a`
     text-decoration: none;
     cursor: pointer;
-    width: 14em;
+    width: 30%;
     text-align: center;
     background-color: #7d0068;
     color: #fff8fc;
     border-radius: 5px;
     padding: 0.6em 1em 0.6em 1em;
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 0.8em;
+    }
 `
 
 const ProjectImage = styled.img`

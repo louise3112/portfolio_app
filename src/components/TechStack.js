@@ -11,12 +11,15 @@ import jestIcon from '@iconify/icons-logos/jest'
 import cypressIcon from '@iconify/icons-logos/cypress'
 import reactIcon from '@iconify/icons-logos/react'
 import mongodbIcon from '@iconify/icons-logos/mongodb'
+import insomniaIcon from '@iconify/icons-logos/insomnia'
+import expressIcon from '@iconify/icons-logos/express'
 
 import pythonIcon from '@iconify/icons-logos/python'
 import flaskIcon from '@iconify/icons-logos/flask'
 import postgresqlIcon from '@iconify/icons-logos/postgresql'
 
-// import javaIcon from '@iconify/icons-logos/java'
+import javaIcon from '@iconify/icons-logos/java'
+import intelliJIcon from '@iconify/icons-logos/intellij-idea'
 
 import html5 from '@iconify/icons-logos/html-5'
 import css3 from '@iconify/icons-logos/css-3'
@@ -68,6 +71,15 @@ const TechStack = () => {
         <TechStackSection>
             <TechStackHeading>TECH STACK</TechStackHeading>
             <TechStackList>
+
+                <TechStackItem title="Java">
+                    <Icon icon={javaIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                <TechStackItem title="IntelliJ">
+                    <Icon icon={intelliJIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
                 <TechStackItem title="JavaScript">
                     <Icon icon={javascriptIcon} height="4em" width="4em"/>
                 </TechStackItem>
@@ -92,6 +104,18 @@ const TechStack = () => {
                     <Icon icon={reactIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
+                <TechStackItem title="MongoDB">
+                    <Icon icon={mongodbIcon} height="5em" width="5em"/>
+                </TechStackItem>
+
+                <TechStackItem title="Insomnia">
+                    <Icon icon={insomniaIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                <TechStackItem title="Express">
+                    <Icon icon={expressIcon} height="5em" width="5em"/>
+                </TechStackItem>
+
                 <TechStackItem title="Python">
                     <Icon icon={pythonIcon} height="4em" width="4em"/>
                 </TechStackItem>
@@ -102,10 +126,6 @@ const TechStack = () => {
 
                 <TechStackItem title="PostgreSQL">
                     <Icon icon={postgresqlIcon} height="4em" width="4em"/>
-                </TechStackItem>
-
-                <TechStackItem title="MongoDB">
-                    <Icon icon={mongodbIcon} height="5em" width="5em"/>
                 </TechStackItem>
 
                 <TechStackItem title="HTML">

@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 
 const AppContent = styled.div`
     min-height: 100vh;
+    max-width: 100wh;
     display: grid;
 `
 
