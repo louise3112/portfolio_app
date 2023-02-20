@@ -53,11 +53,21 @@ const HeaderLinkedin = styled.a`
     align-items: center;
 `
 
+const LinkedinImg = styled.img`
+    height: 4em;
+    width: 4em;
+`
+
 const HeaderGithub = styled.a`
     grid-area: github;
     display: flex;
     justify-content: center;
     align-items: center;
+`
+
+const GithubImg = styled.img`
+    height: 5em;
+    width: 5em;
 `
 
 const HeaderText = styled.p`
@@ -75,8 +85,8 @@ const Header = () => {
             <Heading>Louise Cuthbertson </Heading>
             <SubHeading>Software Developer in Edinburgh</SubHeading>
 
-            <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><img src={linkedinIcon} height="70em" width="70em"/></HeaderLinkedin>
-            <HeaderGithub href="https://github.com/louise3112" target="_blank"><img src={githubIcon} height="90em" width="90em"/></HeaderGithub>
+            <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><LinkedinImg src={linkedinIcon} /></HeaderLinkedin>
+            <HeaderGithub href="https://github.com/louise3112" target="_blank"><GithubImg src={githubIcon}/></HeaderGithub>
 
             <HeaderText> Strong analytical background with an exceptional eye for detail. I am currently looking for a new challenge that will allow me to combine my love of coding and debugging with my passion for solving logic-based problems. </HeaderText>
 

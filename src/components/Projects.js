@@ -72,14 +72,21 @@ const TextLinks = styled.a`
 
 const ProjectLinksDiv = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     column-gap: 2em;
+
+    @media only screen and (max-width: 535px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.5em;
+    }
 `
 
 const ProjectLink = styled.a`
     text-decoration: none;
     cursor: pointer;
-    width: 30%;
+    width: 14em;
     text-align: center;
     background-color: #7d0068;
     color: #fff8fc;
@@ -95,7 +102,7 @@ const ProjectImage = styled.img`
     grid-area: image;
     height: auto;
     max-width: 100%;
-    border: 0.5px solid grey;
+    border: 1px solid lightgrey;
     border-radius: 2%;
 
     @media only screen and (max-width: 1000px) {
@@ -129,12 +136,13 @@ const Projects = () => {
                         <ProjectText><b>1 week group project in JavaScript / React, MongoDB & CSS </b></ProjectText>
                         <ProjectText>For my JavaScript group project at CodeClan, we designed an app using the <TextLinks href="https://restcountries.com/#api-endpoints-v3-all" target="_blank">Countries API data</TextLinks> where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectText>
 
-                        <ProjectText>A video capturing the functionality of this app can be found on linkedin by clicking on the image.</ProjectText>
+                        <ProjectText>A <TextLinks href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">video capturing the functionality of this app</TextLinks> can be found on linkedin.</ProjectText>
+
+                        <ProjectText>Following completion of this project, I completed a personal extension to refactor the front-end code to ensure it was DRY, more reusable and to allow me to host a demo version of the app via Github pages. I found this really useful to consolidate my learning from the project.</ProjectText>
 
                         <ProjectLinksDiv>
                             <ProjectLink href="https://github.com/louise3112/countries_quiz" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">See live demo of front end</ProjectLink>
-                            <ProjectLink href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">See video of app on LinkedIn</ProjectLink>
+                            <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">Go to front end demo</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectImage src={countriesQuiz} alt="Screenshot of geograPHUN app"/>
@@ -150,10 +158,9 @@ const Projects = () => {
 
                         <ProjectText>The current version of the app contains a single card game based on the "52 card pick-up" idea. The app has been designed in a way to ensure it is fairly adaptable to being expanded for further card games at a later date.</ProjectText>
 
-                        <ProjectText>A live copy of this app can be accessed by clicking on the image. </ProjectText>
                         <ProjectLinksDiv>
                             <ProjectLink href="https://github.com/louise3112/card_games" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="https://louise3112.github.io/card_games/" target="_blank">See live app</ProjectLink>
+                            <ProjectLink href="https://louise3112.github.io/card_games/" target="_blank">Go to live app</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectImage src={cardGames} alt="Screenshot of Card Games app"/>
