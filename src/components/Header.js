@@ -15,6 +15,7 @@ const HeaderSection = styled.div`
         "text text text";
     
     @media only screen and (max-width: 900px) {
+        padding: 1.25em 1.5em 1em 1.5em;
         grid-template-columns: 75% 10% 5% 10%;
         grid-template-areas:
             "heading linkedin . github"
@@ -22,8 +23,7 @@ const HeaderSection = styled.div`
             "text text text text";
     }
 
-    @media only screen and (max-width: 700px) {
-        padding: 1.25em 1.5em 1em 1.5em;
+    @media only screen and (max-width: 635px) {
         grid-template-columns: 76% 4% 8% 4% 8%;
         grid-template-areas:
             "heading . linkedin . github"
