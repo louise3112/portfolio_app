@@ -2,6 +2,8 @@ import cardGames from '../images/cardGames.png'
 import droidWorkshop from '../images/droidWorkshop.png'
 import countriesQuiz from '../images/countriesQuiz.png'
 
+import droidWorkshopVid from '../videos/droidWorkshop.mov'
+
 import styled from "styled-components"
 
 const ProjectsSection = styled.div`
@@ -111,6 +113,19 @@ const ProjectImage = styled.img`
     }
 `
 
+const ProjectVideo = styled.video`
+    grid-area: image;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+
+    /* @media only screen and (max-width: 1000px) {
+        height: auto;
+        width: 80%;
+    } */
+`
+
 const LineBreak = styled.hr`
     border-top: 2px solid #7d0068;
     border-left: none;
@@ -180,7 +195,8 @@ const Projects = () => {
                             <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
-                    <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/>
+                    {/* <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/> */}
+                    <ProjectVideo src={droidWorkshopVid} controls="controls"/>
                 </ProjectBox>
 
 
