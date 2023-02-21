@@ -1,5 +1,6 @@
 import linkedinIcon from "../images/linkedinIcon.png"
 import githubIcon from "../images/githubIcon.png"
+// <a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> 
 
 import styled from "styled-components"
 
@@ -8,23 +9,18 @@ const HeaderSection = styled.div`
     color: #fff8fc;
     padding: 1.75em 4em 1em 4em;
     display: grid;
-    grid-template-columns: 80% 10% 10%;
+    grid-template-columns: 80% 9% 2% 9%;
     grid-template-areas:
-        "heading linkedin github"
-        "subheading linkedin github"
-        "text text text";
+        "heading linkedin . github"
+        "subheading linkedin . github"
+        "text text text text";
     
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
         padding: 1.25em 1.5em 1em 1.5em;
-        grid-template-columns: 75% 10% 5% 10%;
-        grid-template-areas:
-            "heading linkedin . github"
-            "subheading linkedin . github"
-            "text text text text";
     }
 
-    @media only screen and (max-width: 635px) {
-        grid-template-columns: 76% 4% 8% 4% 8%;
+    @media only screen and (max-width: 550px) {
+        grid-template-columns: 80% 2% 8% 2% 8%;
         grid-template-areas:
             "heading . linkedin . github"
             "subheading subheading subheading subheading subheading"
@@ -62,18 +58,7 @@ const HeaderLinkedin = styled.a`
 `
 
 const LinkedinImg = styled.img`
-    height: 4em;
-    width: 4em;
-
-    @media only screen and (max-width: 700px) {
-        height: 3em;
-        width: 3em;
-    }
-
-    @media only screen and (max-width: 535px) {
-        height: 2.5em;
-        width: 2.5em;
-    }
+    width: 100%;
 `
 
 const HeaderGithub = styled.a`
@@ -84,18 +69,7 @@ const HeaderGithub = styled.a`
 `
 
 const GithubImg = styled.img`
-    height: 5em;
-    width: 5em;
-
-    @media only screen and (max-width: 700px) {
-        height: 4em;
-        width: 4em;
-    }
-
-    @media only screen and (max-width: 535px) {
-        height: 3em;
-        width: 3em;
-    }
+    width: 100%;
 `
 
 const HeaderText = styled.p`

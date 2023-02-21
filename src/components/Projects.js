@@ -1,5 +1,5 @@
 import cardGames from '../images/cardGames.png'
-import droidWorkshop from '../images/droidWorkshop.png'
+// import droidWorkshop from '../images/droidWorkshop.png'
 import countriesQuiz from '../images/countriesQuiz.png'
 
 import droidWorkshopVid from '../videos/droidWorkshop.mov'
@@ -33,13 +33,14 @@ const ProjectsList = styled.ul`
 const ProjectBox = styled.li`
     display: grid;
     grid-template-areas: 'info . image .';
-    grid-template-columns: 65% 3% 30% 2%;
+    grid-template-columns: 60% 3% 35% 2%;
     align-items: center;
 
-    @media only screen and (max-width: 1000px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    @media only screen and (max-width: 900px) {
+        grid-template-areas: 
+            'info info info'
+            '. image .';
+        grid-template-columns: 10% 80% 10%;
         row-gap: 1em;
     }
 `
@@ -74,8 +75,11 @@ const TextLinks = styled.a`
 
 const ProjectLinksDiv = styled.div`
     display: flex;
-    /* justify-content: space-evenly; */
     column-gap: 2em;
+
+    @media only screen and (max-width: 900px) {
+        justify-content: center;
+    }
 
     @media only screen and (max-width: 535px) {
         flex-direction: column;
@@ -106,11 +110,6 @@ const ProjectImage = styled.img`
     max-width: 100%;
     border: 1px solid lightgrey;
     border-radius: 2%;
-
-    @media only screen and (max-width: 1000px) {
-        height: auto;
-        width: 80%;
-    }
 `
 
 const ProjectVideo = styled.video`
@@ -119,11 +118,6 @@ const ProjectVideo = styled.video`
     max-width: 100%;
     border: 1px solid lightgrey;
     border-radius: 2%;
-
-    /* @media only screen and (max-width: 1000px) {
-        height: auto;
-        width: 80%;
-    } */
 `
 
 const LineBreak = styled.hr`
@@ -149,11 +143,11 @@ const Projects = () => {
                     <ProjectInfo>
                         <ProjectHeading>geograPHUN</ProjectHeading>
                         <ProjectText><b>1 week group project in JavaScript / React, MongoDB & CSS </b></ProjectText>
-                        <ProjectText>For my JavaScript group project at CodeClan, we designed an app using the <TextLinks href="https://restcountries.com/#api-endpoints-v3-all" target="_blank">Countries API data</TextLinks> where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectText>
+                        <ProjectText>Our second project at CodeClan was an app using the <TextLinks href="https://restcountries.com/#api-endpoints-v3-all" target="_blank">Countries API data</TextLinks> where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectText>
 
-                        <ProjectText>A <TextLinks href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">video capturing the functionality of this app</TextLinks> can be found on linkedin.</ProjectText>
+                        {/* <ProjectText>A <TextLinks href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">video capturing the functionality of this app</TextLinks> can be found on linkedin.</ProjectText> */}
 
-                        <ProjectText>Following completion of this project, I completed a personal extension to refactor the front-end code to ensure it was DRY, more reusable and to allow me to host a demo version of the app via Github pages. I found this really useful to consolidate my learning from the project.</ProjectText>
+                        <ProjectText>I completed a personal extension to refactor the front-end code for this project to ensure it was DRY, more reusable and to allow me to host a demo version of the app via Github pages. I found this really useful to consolidate my learning from the project.</ProjectText>
 
                         <ProjectLinksDiv>
                             <ProjectLink href="https://github.com/louise3112/countries_quiz" target="_blank">See full code on GitHub</ProjectLink>
@@ -195,7 +189,6 @@ const Projects = () => {
                             <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
-                    {/* <ProjectImage src={droidWorkshop} alt="Screenshot of Droid Repair Workshop app"/> */}
                     <ProjectVideo src={droidWorkshopVid} controls="controls"/>
                 </ProjectBox>
 
