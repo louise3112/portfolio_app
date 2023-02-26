@@ -1,6 +1,7 @@
 import cardGames from '../images/cardGames.png'
 // import droidWorkshop from '../images/droidWorkshop.png'
 import countriesQuiz from '../images/countriesQuiz.png'
+import testingTunes from '../images/testingTunes.png'
 
 import droidWorkshopVid from '../videos/droidWorkshop.mov'
 
@@ -155,6 +156,24 @@ const Projects = () => {
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectImage src={countriesQuiz} alt="Screenshot of geograPHUN app"/>
+                </ProjectBox>
+
+                <LineBreak />
+
+                <ProjectBox>
+                    <ProjectInfo>
+                        <ProjectHeading>Testing Tunes</ProjectHeading>
+                        <ProjectText><b>Weekend solo project in JavaScript / React, Jest, Cypress, CircleCI & AWS </b></ProjectText>
+                        <ProjectText>This was a personal project I chose to focus on testing and applying CI / CD principles. The testing packages I used were Jest (unit testing) and Cypress (end-to-end testing), alongside CircleCI to support CI / CD. The live app is hosted via AWS using S3.</ProjectText>
+
+                        <ProjectText>The app itself is a front-end JavaScript / React app that uses the iTunes API to display the current top 20. I have also incorporated the ability to listen to a demo of each song, and to view the genre-specific top 20 for all genres that appear in the overall top 20. The design of the app was inspired by an old Top of the Pops logo.</ProjectText>
+
+                        <ProjectLinksDiv>
+                            <ProjectLink href="https://github.com/louise3112/Testing_Tunes" target="_blank">See full code on GitHub</ProjectLink>
+                            <ProjectLink href="http://testing-tunes-lc.s3-website.eu-west-2.amazonaws.com/" target="_blank">Go to live app</ProjectLink>
+                        </ProjectLinksDiv>
+                    </ProjectInfo>
+                    <ProjectImage src={testingTunes} alt="Screenshot of CircleCI during build"/>
                 </ProjectBox>
 
                 <LineBreak />
