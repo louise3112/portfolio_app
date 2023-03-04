@@ -4,6 +4,7 @@ import countriesQuiz from '../images/countriesQuiz.png'
 import testingTunes from '../images/testingTunes.png'
 
 import droidWorkshopVid from '../videos/droidWorkshop.mov'
+// import geographunVid from '../videos/geographun.mov'
 
 import styled from "styled-components"
 
@@ -146,8 +147,6 @@ const Projects = () => {
                         <ProjectText><b>1 week group project in JavaScript / React, MongoDB & CSS </b></ProjectText>
                         <ProjectText>Our second project at CodeClan was an app using the <TextLinks href="https://restcountries.com/#api-endpoints-v3-all" target="_blank">Countries API data</TextLinks> where users could play interactive quiz games, see their results (even if they refreshed the app) and view underlying information for each country so they can improve their scores.</ProjectText>
 
-                        {/* <ProjectText>A <TextLinks href="https://www.linkedin.com/feed/update/urn:li:activity:7031994797494005762/" target="_blank">video capturing the functionality of this app</TextLinks> can be found on linkedin.</ProjectText> */}
-
                         <ProjectText>I completed a personal extension to refactor the front-end code for this project to ensure it was DRY, more reusable and to allow me to host a demo version of the app via Github pages. I found this really useful to consolidate my learning from the project.</ProjectText>
 
                         <ProjectLinksDiv>
@@ -155,6 +154,7 @@ const Projects = () => {
                             <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">Go to front end demo</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
+                    {/* <ProjectVideo src={geographunVid} alt="Short video of the geograPHUN app" controls="controls"/> */}
                     <ProjectImage src={countriesQuiz} alt="Screenshot of geograPHUN app"/>
                 </ProjectBox>
 
@@ -198,7 +198,7 @@ const Projects = () => {
 
                 <ProjectBox>
                     <ProjectInfo>
-                        <ProjectHeading>Droid Repair Workshop</ProjectHeading>
+                        <ProjectHeading>Nuts 'n' Bots Droid Repair Workshop</ProjectHeading>
                         <ProjectText><b>1 week solo project using Python / Flask, PostgreSQL & CSS</b></ProjectText>
                         <ProjectText>For my first project at CodeClan, I developed a full stack Python app. The initial brief was to ensure the app could manage CRUD actions for technicians, droids and droid owners at a droid repair workshop.</ProjectText>
 
@@ -208,7 +208,7 @@ const Projects = () => {
                             <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
-                    <ProjectVideo src={droidWorkshopVid} controls="controls"/>
+                    <ProjectVideo src={droidWorkshopVid} alt="Short video of the droid repair workshop app" controls="controls"/>
                 </ProjectBox>
 
 
