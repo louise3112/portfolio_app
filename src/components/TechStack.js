@@ -20,6 +20,9 @@ import postgresqlIcon from '@iconify/icons-logos/postgresql'
 
 import javaIcon from '@iconify/icons-logos/java'
 import intelliJIcon from '@iconify/icons-logos/intellij-idea'
+import springIcon from '@iconify/icons-logos/spring-icon'
+import cSharpIcon from '@iconify/icons-logos/c-sharp'
+import unityIcon from '@iconify/icons-logos/unity'
 
 import html5 from '@iconify/icons-logos/html-5'
 import css3 from '@iconify/icons-logos/css-3'
@@ -54,7 +57,7 @@ const TechStackList = styled.ul`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 3em;
+    column-gap: 2em;
     row-gap: 1em;
 `
 
@@ -79,6 +82,18 @@ const TechStack = () => {
                 <TechStackItem title="IntelliJ">
                     <Icon icon={intelliJIcon} height="4em" width="4em"/>
                 </TechStackItem>
+
+                <TechStackItem title="Spring">
+                    <Icon icon={springIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                {/* <TechStackItem title="C Sharp">
+                    <Icon icon={cSharpIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                <TechStackItem title="Unity">
+                    <Icon icon={unityIcon} height="4em" width="4em"/>
+                </TechStackItem> */}
 
                 <TechStackItem title="JavaScript">
                     <Icon icon={javascriptIcon} height="4em" width="4em"/>
