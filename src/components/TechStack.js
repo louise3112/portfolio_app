@@ -19,8 +19,8 @@ import flaskIcon from '@iconify/icons-logos/flask'
 import postgresqlIcon from '@iconify/icons-logos/postgresql'
 
 import javaIcon from '@iconify/icons-logos/java'
-import intelliJIcon from '@iconify/icons-logos/intellij-idea'
 import springIcon from '@iconify/icons-logos/spring-icon'
+import intelliJIcon from '@iconify/icons-logos/intellij-idea'
 import cSharpIcon from '@iconify/icons-logos/c-sharp'
 import unityIcon from '@iconify/icons-logos/unity'
 
@@ -57,8 +57,8 @@ const TechStackList = styled.ul`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 2em;
-    row-gap: 1em;
+    column-gap: 3%;
+    row-gap: 5%;
 `
 
 const TechStackItem = styled.li`
@@ -79,21 +79,21 @@ const TechStack = () => {
                     <Icon icon={javaIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                <TechStackItem title="IntelliJ">
-                    <Icon icon={intelliJIcon} height="4em" width="4em"/>
-                </TechStackItem>
-
                 <TechStackItem title="Spring">
                     <Icon icon={springIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
-                {/* <TechStackItem title="C Sharp">
+                <TechStackItem title="IntelliJ">
+                    <Icon icon={intelliJIcon} height="4em" width="4em"/>
+                </TechStackItem>
+
+                <TechStackItem title="C Sharp">
                     <Icon icon={cSharpIcon} height="4em" width="4em"/>
                 </TechStackItem>
 
                 <TechStackItem title="Unity">
                     <Icon icon={unityIcon} height="4em" width="4em"/>
-                </TechStackItem> */}
+                </TechStackItem>
 
                 <TechStackItem title="JavaScript">
                     <Icon icon={javascriptIcon} height="4em" width="4em"/>

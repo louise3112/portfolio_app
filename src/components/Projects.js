@@ -1,10 +1,7 @@
 import cardGames from '../images/cardGames.png'
 // import droidWorkshop from '../images/droidWorkshop.png'
-import countriesQuiz from '../images/countriesQuiz.png'
+// import countriesQuiz from '../images/countriesQuiz.png'
 import testingTunes from '../images/testingTunes.png'
-
-import droidWorkshopVid from '../videos/droidWorkshop.mov'
-// import geographunVid from '../videos/geographun.mov'
 
 import styled from "styled-components"
 
@@ -113,11 +110,14 @@ const ProjectImage = styled.img`
     border: 1px solid lightgrey;
     border-radius: 2%;
 `
-
-const ProjectVideo = styled.video`
+const ProjectVideoBox = styled.div`
     grid-area: image;
-    height: auto;
     max-width: 100%;
+`
+const ProjectVideo = styled.iframe`
+    height: auto;
+    width: 100%;
+    aspect-ratio: 25 / 13.5;
     border: 1px solid lightgrey;
     border-radius: 2%;
 `
@@ -141,6 +141,26 @@ const Projects = () => {
             <ProjectsHeading>PROJECTS</ProjectsHeading>
             <ProjectsList>
 
+            <ProjectBox>
+                    <ProjectInfo>
+                        <ProjectHeading>Children of the Bookcase</ProjectHeading>
+                        <ProjectText><b>2 week group project in C# & Unity </b></ProjectText>
+                        <ProjectText>A 3D, first-person escape room style puzzle game built for our CodeClan Capstone project. I chose this project as I was keen to build and design the type of game that I felt really enthusiastic about playing. </ProjectText>
+
+                        <ProjectText>It was also an excellent opportunity to continue to expand on the skills I had been learning throughout the course, including rapidly learning a new language and using git / github to ensure smooth collaboration throughout. As this was a completely different type of project to those worked on previously, we applied SCRUM principles and a mix of mob, pair and solo programming to ensure continual progress throughout. We also had to adapt our testing and debugging approaches to reflect the nature of the project. </ProjectText>
+
+                        <ProjectLinksDiv>
+                            <ProjectLink href="https://github.com/samuel-williams-ed/Escape_Game" target="_blank">See full code on GitHub</ProjectLink>
+                            {/* <ProjectLink href="" target="_blank">Play game on Unity Play</ProjectLink> */}
+                        </ProjectLinksDiv>
+                    </ProjectInfo>
+                    <ProjectVideoBox>
+                        <ProjectVideo src="https://www.youtube.com/embed/B4evUBahNI4?rel=0" title="Short video of the Children of the Bookcase game" allow="fullscreen"/>
+                    </ProjectVideoBox>
+                </ProjectBox>
+
+                <LineBreak />
+
                 <ProjectBox>
                     <ProjectInfo>
                         <ProjectHeading>geograPHUN</ProjectHeading>
@@ -154,8 +174,9 @@ const Projects = () => {
                             <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">Go to front end demo</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
-                    {/* <ProjectVideo src={geographunVid} alt="Short video of the geograPHUN app" controls="controls"/> */}
-                    <ProjectImage src={countriesQuiz} alt="Screenshot of geograPHUN app"/>
+                    <ProjectVideoBox>
+                        <ProjectVideo src="https://www.youtube.com/embed/-Et6zwGKV5o?rel=0" title="Short video of the geograPHUN app" allow="fullscreen"/>
+                    </ProjectVideoBox>
                 </ProjectBox>
 
                 <LineBreak />
@@ -208,7 +229,10 @@ const Projects = () => {
                             <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
-                    <ProjectVideo src={droidWorkshopVid} alt="Short video of the droid repair workshop app" controls="controls"/>
+                    <ProjectVideoBox>
+                        <ProjectVideo src="https://www.youtube.com/embed/_cgO-DRaQaw?rel=0" title="Short video of the droid repair workshop app" allow="fullscreen"/>
+                    </ProjectVideoBox>
+                    {/* <ProjectVideo src={droidWorkshopVid} alt="Short video of the droid repair workshop app" controls="controls"/> */}
                 </ProjectBox>
 
 

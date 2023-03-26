@@ -28,6 +28,14 @@ const HeaderSection = styled.div`
             "subheading subheading subheading"
             "text text text";
     }
+
+    @media only screen and (max-width: 450px) {
+        grid-template-columns: 1fr 3em;
+        grid-template-areas:
+            "heading linkedin"
+            "subheading github"
+            "text text";
+    }
 `
 
 const Heading = styled.h1`
@@ -91,7 +99,7 @@ const Header = () => {
     return (
         <HeaderSection>
             <Heading>Louise Cuthbertson </Heading>
-            <SubHeading>Software Developer in Edinburgh</SubHeading>
+            <SubHeading>Software Developer &nbsp;&nbsp;|&nbsp;&nbsp; Edinburgh</SubHeading>
 
             <HeaderLinkedin href="https://www.linkedin.com/in/louise3112" target="_blank"><ContactLogo  src={linkedinIcon} /></HeaderLinkedin>
             <HeaderGithub href="https://github.com/louise3112" target="_blank"><ContactLogo  src={githubIcon}/></HeaderGithub>
