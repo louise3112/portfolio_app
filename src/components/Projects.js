@@ -232,7 +232,6 @@ const Projects = () => {
                     <ProjectVideoBox>
                         <ProjectVideo src="https://www.youtube.com/embed/_cgO-DRaQaw?rel=0" title="Short video of the droid repair workshop app" allow="fullscreen"/>
                     </ProjectVideoBox>
-                    {/* <ProjectVideo src={droidWorkshopVid} alt="Short video of the droid repair workshop app" controls="controls"/> */}
                 </ProjectBox>
 
 
