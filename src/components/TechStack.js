@@ -57,8 +57,6 @@ const TechStackList = styled.ul`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 3%;
-    row-gap: 5%;
 `
 
 const TechStackItem = styled.li`
@@ -66,6 +64,11 @@ const TechStackItem = styled.li`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1em 1em 1em 1em;
+
+    @media only screen and (max-width: 600px) {
+        padding: 0.5em 0.8em 0.5em 0.8em;
+    }
 `
 
 
