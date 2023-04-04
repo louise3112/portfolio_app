@@ -151,7 +151,7 @@ const Projects = () => {
 
                         <ProjectLinksDiv>
                             <ProjectLink href="https://github.com/samuel-williams-ed/Escape_Game" target="_blank">See full code on GitHub</ProjectLink>
-                            {/* <ProjectLink href="" target="_blank">Play game on Unity Play</ProjectLink> */}
+                            <ProjectLink href="https://play.unity.com/mg/other/children-of-the-bookcase" target="_blank">Play game on Unity Play</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectVideoBox>
