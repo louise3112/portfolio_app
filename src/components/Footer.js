@@ -17,7 +17,7 @@ const FooterText = styled.p`
 const Footer = () => {
     return (
         <FooterSection>
-            <FooterText>&copy; Louise Cuthbertson, March 2023</FooterText>
+            <FooterText>&copy; Louise Cuthbertson, May 2023</FooterText>
         </FooterSection>
     )
 }
