@@ -74,7 +74,7 @@ const TextLinks = styled.a`
 
 const ProjectLinksDiv = styled.div`
     display: flex;
-    column-gap: 2em;
+    column-gap: 1em;
 
     @media only screen and (max-width: 900px) {
         justify-content: center;
@@ -91,7 +91,7 @@ const ProjectLinksDiv = styled.div`
 const ProjectLink = styled.a`
     text-decoration: none;
     cursor: pointer;
-    width: 14em;
+    width: 10em;
     text-align: center;
     background-color: #7d0068;
     color: #fff8fc;
@@ -141,7 +141,29 @@ const Projects = () => {
             <ProjectsHeading>PROJECTS</ProjectsHeading>
             <ProjectsList>
 
-            <ProjectBox>
+              <ProjectBox>
+                    <ProjectInfo>
+                        <ProjectHeading>Particle Explosion Simulation</ProjectHeading>
+                        <ProjectText><b>1 day solo project in C++</b></ProjectText>
+                        <ProjectText>A simulation of a particle fire explosion developed in C++ using the SDL2 library as a GUI.</ProjectText>
+
+                        <ProjectText>This project was completed following the final tutorial of an <TextLinks href="https://www.udemy.com/course/free-learn-c-tutorial-beginners/learn/lecture/1747908#overview" target="_blank">Introduction to C++ course on Udemy</TextLinks> which I was completing in preparation for a job interview. I found working through this project was a great way to consolidate my learning whilst producing something that looks pretty cool! </ProjectText>
+
+                        <ProjectText>I really enjoyed the incremental approach which helped me to visualise what was being acheived at each stage - so much so I collated videos of each key stage and compiled them into a progress video!</ProjectText>
+
+                        <ProjectLinksDiv>
+                            <ProjectLink href="https://github.com/louise3112/particle_explosion" target="_blank">GitHub Repo</ProjectLink>
+                            <ProjectLink href="https://youtu.be/Lp6_RpcIj0E" target="_blank">Progress Video</ProjectLink>
+                        </ProjectLinksDiv>
+                    </ProjectInfo>
+                    <ProjectVideoBox>
+                        <ProjectVideo src="https://www.youtube.com/embed/mRh2EBO_zow?rel=0" title="Short video of the particle explosion simulation" allow="fullscreen"/>
+                    </ProjectVideoBox>
+                </ProjectBox>
+
+                <LineBreak />
+
+                <ProjectBox>
                     <ProjectInfo>
                         <ProjectHeading>Children of the Bookcase</ProjectHeading>
                         <ProjectText><b>2 week group project in C# & Unity </b></ProjectText>
@@ -149,9 +171,12 @@ const Projects = () => {
 
                         <ProjectText>It was also an excellent opportunity to continue to expand on the skills I had been learning throughout the course, including rapidly learning a new language and using git / github to ensure smooth collaboration throughout. As this was a completely different type of project to those worked on previously, we applied SCRUM principles and a mix of mob, pair and solo programming to ensure continual progress throughout. We also had to adapt our testing and debugging approaches to reflect the nature of the project. </ProjectText>
 
+                        <ProjectText>Myself and <TextLinks href="https://www.linkedin.com/in/charbroadley/" target="_blank">Charlotte Broadley</TextLinks> presented the project as part of a Project Showcase during CodeClan's Open Week. We are so proud of this project and were more than happy to talk about our experience to prospective students and partners.</ProjectText>
+
                         <ProjectLinksDiv>
-                            <ProjectLink href="https://github.com/samuel-williams-ed/Escape_Game" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="https://play.unity.com/mg/other/children-of-the-bookcase" target="_blank">Play game on Unity Play</ProjectLink>
+                            <ProjectLink href="https://github.com/samuel-williams-ed/Escape_Game" target="_blank">GitHub Repo</ProjectLink>
+                            <ProjectLink href="https://play.unity.com/mg/other/children-of-the-bookcase" target="_blank">Play Game</ProjectLink>
+                            <ProjectLink href="https://youtu.be/edcQ3XGXLEk" target="_blank">Watch Presentation</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectVideoBox>
@@ -170,8 +195,8 @@ const Projects = () => {
                         <ProjectText>I completed a personal extension to refactor the front-end code for this project to ensure it was DRY, more reusable and to allow me to host a demo version of the app via Github pages. I found this really useful to consolidate my learning from the project.</ProjectText>
 
                         <ProjectLinksDiv>
-                            <ProjectLink href="https://github.com/louise3112/countries_quiz" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">Go to front end demo</ProjectLink>
+                            <ProjectLink href="https://github.com/louise3112/countries_quiz" target="_blank">GitHub Repo</ProjectLink>
+                            <ProjectLink href="https://louise3112.github.io/geographun-demo" target="_blank">Front End Demo</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectVideoBox>
@@ -190,8 +215,8 @@ const Projects = () => {
                         <ProjectText>The app itself is a front-end JavaScript / React app that uses the iTunes API to display the current top 20. I have also incorporated the ability to listen to a demo of each song, and to view the genre-specific top 20 for all genres that appear in the overall top 20. The design of the app was inspired by an old Top of the Pops logo.</ProjectText>
 
                         <ProjectLinksDiv>
-                            <ProjectLink href="https://github.com/louise3112/Testing_Tunes" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="http://testing-tunes-lc.s3-website.eu-west-2.amazonaws.com/" target="_blank">Go to live app</ProjectLink>
+                            <ProjectLink href="https://github.com/louise3112/Testing_Tunes" target="_blank">GitHub Repo</ProjectLink>
+                            <ProjectLink href="http://testing-tunes-lc.s3-website.eu-west-2.amazonaws.com/" target="_blank">Live App</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectImage src={testingTunes} alt="Screenshot of CircleCI during build"/>
@@ -208,8 +233,8 @@ const Projects = () => {
                         <ProjectText>The current version of the app contains a single card game based on the "52 card pick-up" idea. The app has been designed in a way to ensure it is fairly adaptable to being expanded for further card games at a later date.</ProjectText>
 
                         <ProjectLinksDiv>
-                            <ProjectLink href="https://github.com/louise3112/card_games" target="_blank">See full code on GitHub</ProjectLink>
-                            <ProjectLink href="https://louise3112.github.io/card_games/" target="_blank">Go to live app</ProjectLink>
+                            <ProjectLink href="https://github.com/louise3112/card_games" target="_blank">GitHub Repo</ProjectLink>
+                            <ProjectLink href="https://louise3112.github.io/card_games/" target="_blank">Live App</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectImage src={cardGames} alt="Screenshot of Card Games app"/>
@@ -226,7 +251,7 @@ const Projects = () => {
                         <ProjectText>Within the timeframe, I was able to further extend this to incorporate CRUD actions for services available at the workshop as well.</ProjectText>
 
                         <ProjectLinksDiv>
-                            <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">See full code on GitHub</ProjectLink>
+                            <ProjectLink href="https://github.com/louise3112/droid_workshop" target="_blank">GitHub Repo</ProjectLink>
                         </ProjectLinksDiv>
                     </ProjectInfo>
                     <ProjectVideoBox>
