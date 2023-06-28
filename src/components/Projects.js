@@ -2,6 +2,7 @@ import cardGames from '../images/cardGames.png'
 // import droidWorkshop from '../images/droidWorkshop.png'
 // import countriesQuiz from '../images/countriesQuiz.png'
 import testingTunes from '../images/testingTunes.png'
+import ddcElementor from '../images/ddcElementor.png'
 
 import styled from "styled-components"
 
@@ -141,7 +142,26 @@ const Projects = () => {
             <ProjectsHeading>PROJECTS</ProjectsHeading>
             <ProjectsList>
 
-              <ProjectBox>
+                <ProjectBox>
+                    <ProjectInfo>
+                        <ProjectHeading>Dunbar Day Centre Website</ProjectHeading>
+                        <ProjectText><b>10 week STA project in Wordpress & Elementor</b></ProjectText>
+                        <ProjectText>A bespoke website developed in partnership with <TextLinks href="https://www.scottishtecharmy.org/" target="_blank">the STA</TextLinks> and Dunbar Day Centre, with a focus on helping the day centre increase their online reach.</ProjectText>
+
+                        <ProjectText>As this was the first STA project I've been involved in, I took some time to learn the fundamentals of Wordpress and Elementor - the preferred tools for this kind of STA project. I contributed to the design and creation of content, whilst ensuring the site had high readability and SEO scores. </ProjectText>
+
+                        <ProjectText>I really enjoyed the opportunity to build something to meet real-life users' needs and to get real-time feedback from the day centre staff who would be managing the website once it was up and running!</ProjectText>
+
+                        <ProjectLinksDiv>
+                            <ProjectLink href="" target="_blank">Live Site</ProjectLink>
+                        </ProjectLinksDiv>
+                    </ProjectInfo>
+                    <ProjectImage src={ddcElementor} alt="Screenshot of Elementor during build"/>
+                </ProjectBox>
+
+                <LineBreak />
+
+                <ProjectBox>
                     <ProjectInfo>
                         <ProjectHeading>Particle Explosion Simulation</ProjectHeading>
                         <ProjectText><b>1 day solo project in C++</b></ProjectText>
